@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtSoru1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Ne olup bittiği hakkında hiçbir fikrin yok. Ne yapacaksın?"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!--
+    <ImageView
+        android:id="@+id/imgSoru1"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtSoru1"
+        android:layout_margin="5dp"
+        android:background="@color/colorAccent" />
+    -->
+
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/imgSoru1"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/soru1" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupCevap1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="Bu bir şaka olmalı, telefonu kapat ve anneni ara."
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="Başlayalım"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="Cevap 3 Cevap 3 Cevap 3 Cevap 3 Cevap 3 Cevap 3 Cevap 3 Cevap 3 Cevap 3 Cevap 3 Cevap 3 "
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="Cevap 4 Cevap 4 Cevap 4 Cevap 4 Cevap 4 Cevap 4 Cevap 4 Cevap 4 Cevap 4 Cevap 4 "
+            android:textSize="14sp" />
+
+    </RadioGroup>
+
+</LinearLayout>

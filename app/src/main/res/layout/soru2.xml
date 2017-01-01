@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/txtSoru2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Endişeye kapılıp korkuyorsun."
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <!--
+    <ImageView
+        android:id="@+id/imgSoru2"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_below="@id/txtSoru2"
+        android:layout_margin="5dp"
+        android:background="@color/colorAccent" />
+    -->
+
+    <pl.droidsonroids.gif.GifTextView
+        android:id="@+id/imgSoru2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="5dp"
+        android:background="@drawable/soru2" />
+
+    <TextView
+        android:id="@+id/txtAciklama2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="Doktorun sana 3 adet hap veriyor ve bunları yarımşar saat arayla alman gerekiyor. Hapları bitirmen ne kadar sürer?"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+
+    <RadioGroup
+        android:id="@+id/radioGroupCevap2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="1 saat"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="1.5 saat"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="1 saat 15 dakika"
+            android:textSize="14sp" />
+
+        <RadioButton
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@color/colorPrimary"
+            android:paddingBottom="3dp"
+            android:paddingTop="3dp"
+            android:text="Bu bir tuzak derim ve hapları içmem!"
+            android:textSize="14sp" />
+
+    </RadioGroup>
+
+</LinearLayout>
