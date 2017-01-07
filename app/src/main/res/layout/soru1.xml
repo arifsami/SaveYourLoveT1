@@ -36,6 +36,7 @@
         android:layout_height="wrap_content">
 
         <RadioButton
+            android:id="@+id/cevap1soru1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -46,6 +47,7 @@
             android:textSize="14sp" />
 
         <RadioButton
+            android:id="@+id/cevap2soru1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -56,6 +58,7 @@
             android:textSize="14sp" />
 
         <RadioButton
+            android:id="@+id/cevap3soru1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -66,6 +69,7 @@
             android:textSize="14sp" />
 
         <RadioButton
+            android:id="@+id/cevap4soru1"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"

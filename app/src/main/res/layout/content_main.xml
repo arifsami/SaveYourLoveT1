@@ -12,11 +12,105 @@
     tools:context="com.sacompany.saveyourlove.MainActivity"
     tools:showIn="@layout/activity_main">
 
+    <!--
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         >
     </android.support.v4.view.ViewPager>
+    -->
+
+    <ViewFlipper
+        android:id="@+id/viewFlipperTest"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <include
+            android:id="@+id/viewSoru1"
+            layout="@layout/soru1" />
+
+        <include
+            android:id="@+id/viewSoru2"
+            layout="@layout/soru2" />
+
+    </ViewFlipper>
+
+    <!-- Hata 1 -->
+    <LinearLayout
+        android:id="@+id/hata1"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Geçmiş olsun..."
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <pl.droidsonroids.gif.GifTextView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/hata1" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Yanlış cevap co! Annen öldü."
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnHata1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yerinde olsam baştan başlardım!" />
+
+    </LinearLayout>
+
+
+    <!-- Hata 2 -->
+    <LinearLayout
+        android:id="@+id/hata2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:visibility="gone">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Yanlış cevap..."
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <pl.droidsonroids.gif.GifTextView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_margin="5dp"
+            android:background="@drawable/hata2" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:text="Yerinde olsam dikkatli olurdum. Bu gidişle bana anneni öldürteceksin :)"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/btnHata2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hadi, başa dönelim..." />
+
+    </LinearLayout>
 
 </RelativeLayout>
